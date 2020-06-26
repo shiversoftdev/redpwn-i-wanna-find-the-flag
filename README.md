@@ -42,3 +42,11 @@ Why is this useful? Well, any kind of level transition will call this function. 
 After inspecting the internals of this function we notice it takes one parameter\
 ![game5](/img/gida5.png)\
 \
+In this screenshot I have it labeled, but during the challenge I just looked up the handy official documentation\
+![site1](/img/site1.png)\
+\
+Now you may have noticed that the `room_goto` function searches for the first script argument and sets a variable to it. This is excellent for us because we can set a breakpoint at the stack push of EAX (param1 in `__CDECL`) and just set the room id to whatever we want\
+![game7](/img/gida7.png)\
+\
+![game7](/img/gida8.png)\
+\
