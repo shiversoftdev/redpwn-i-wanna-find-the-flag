@@ -48,5 +48,11 @@ In this screenshot I have it labeled, but during the challenge I just looked up 
 Now you may have noticed that the `room_goto` function searches for the first script argument and sets a variable to it. This is excellent for us because we can set a breakpoint at the stack push of EAX (param1 in `__CDECL`) and just set the room id to whatever we want\
 ![game7](/img/gida7.png)\
 \
-![game7](/img/gida8.png)\
+![game8](/img/gida8.png)\
 \
+Upon reloading, dieing, warping, we hit our breakpoint, and from there, its just an enumeration of room indexes until we find `0xC`, aka, flag room\
+![game9](/img/gida9.png)\
+![gameA](/img/gidaA.png)\
+\
+That's it, right? We clearly see flag! However, there is just one problem\
+![meme](/img/meme.jpg)\
