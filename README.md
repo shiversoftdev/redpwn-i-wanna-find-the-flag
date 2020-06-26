@@ -22,6 +22,9 @@ Nice! This looks intersting... Lets xref\
 ![game1](/img/gida2.png)\
 \
 Wow! Nice! This is clearly virtual function registry function for the internal vm. This is the point in which i realize this was a game maker game.\
+\
 I will say that in all my time reversing games, this has never come up, so there was a learning curve at first,\
 however I have some experience with the CoD vm so things felt very familiar here\
+\
 A quick F5 shows us a group of *juicy dev functions* waiting to be called...\
+![game1](/img/gida3.png)\
