@@ -56,3 +56,13 @@ Upon reloading, dieing, warping, we hit our breakpoint, and from there, its just
 \
 That's it, right? We clearly see flag! However, there is just one problem\
 ![meme](/img/meme.jpg)\
+\
+Bummer :( \
+![view](/img/view.gif)\
+
+# Viewport settings
+So there are probably a lot of ways to proceed from here, but I'm going to take the set byte route and do some pointer hopping\
+\
+In game maker, there are viewports in the level that allow you to view different portions of the level. Indexed 0 to 7, each viewport has several properties, including position, and dimensions. I chose to adjust the x size and scrunch the room into view\
+\
+Lets start at `room_get_viewport`\
