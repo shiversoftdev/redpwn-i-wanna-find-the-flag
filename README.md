@@ -67,7 +67,7 @@ In game maker, there are viewports in the level that allow you to view different
 \
 Lets start at `view_get_wport` (sub_4027A0) which gets the width of the viewport passed as a param\
 \
-It may seem a bit cryptic at first but this boils down to an array of viewport pointers offset 0x48 from value of edx, a relative pointer from process base.
+It may seem a bit cryptic at first but this boils down to an array of viewport pointers offset 0x48 from value of edx, a relative pointer from process base\
 ![gameB](/img/gidaB.png)\
 ![gameC](/img/gidaC.png)\
 \
