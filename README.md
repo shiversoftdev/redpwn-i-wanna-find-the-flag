@@ -50,7 +50,7 @@ Now you may have noticed that the `room_goto` function searches for the first sc
 \
 ![game8](/img/gida8.png)\
 \
-Upon reloading, dieing, warping, we hit our breakpoint, and from there, its just an enumeration of room indexes until we find `0xC`, aka, flag room\
+Upon reloading, dying, warping, etc. we hit our breakpoint, and from there, its just an enumeration of room indexes until we find `0xC`, aka, flag room\
 ![game9](/img/gida9.png)\
 ![gameA](/img/gidaA.png)\
 \
@@ -58,7 +58,7 @@ That's it, right? We clearly see flag! However, there is just one problem\
 ![meme](/img/meme.jpg)\
 \
 Bummer :( \
-![view](/img/view.gif)\
+![view](/img/view.gif)
 
 # Viewport settings
 So there are probably a lot of ways to proceed from here, but I'm going to take the set byte route and do some pointer hopping\
