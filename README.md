@@ -65,4 +65,13 @@ So there are probably a lot of ways to proceed from here, but I'm going to take 
 \
 In game maker, there are viewports in the level that allow you to view different portions of the level. Indexed 0 to 7, each viewport has several properties, including position, and dimensions. I chose to adjust the x size and scrunch the room into view\
 \
-Lets start at `room_get_viewport`\
+Lets start at `view_get_wport` (sub_4027A0) which gets the width of the viewport passed as a param\
+\
+It may seem a bit cryptic at first but this boils down to an array of viewport pointers offset 0x48 from value of edx, a relative pointer from process base.
+![gameB](/img/gidaB.png)\
+![gameC](/img/gidaC.png)\
+\
+So after some quick maths on google we get our expected viewport pointer at `0x3100750` which references `0x113fa98`, which produces this beauty\
+![gameD](/img/gidaD.png)\
+\
+This lines up with documentation, and as such adding `0x1C` to the struct produces our addy for width. I never checked what this data is but I think its a `float`, and all I did was change `48 44` to `48 45` and we get the flag\
