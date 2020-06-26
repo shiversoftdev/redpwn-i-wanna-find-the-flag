@@ -14,3 +14,14 @@ So its a ctf and that means cheating at the game is OK :D\
 \
 I utilized cheat engine a lot in this challenge, as having a debugger and all sorts of nice features was essential.
 After wasting about an hour messing with player position and other interesting values, I decided it was time to just pop IDA open and explore\
+\
+Naturally, I opened up strings and searched debug to look for any dev options left in the game\
+![game1](/img/gida1.png)\
+\
+Nice! This looks intersting... Lets xref\
+![game1](/img/gida2.png)\
+\
+Wow! Nice! This is clearly virtual function registry function for the internal vm. This is the point in which i realize this was a game maker game.\
+I will say that in all my time reversing games, this has never come up, so there was a learning curve at first,\
+however I have some experience with the CoD vm so things felt very familiar here\
+A quick F5 shows us a group of *juicy dev functions* waiting to be called...\
