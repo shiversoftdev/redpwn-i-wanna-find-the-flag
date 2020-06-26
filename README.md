@@ -75,3 +75,6 @@ So after some quick maths on google we get our expected viewport pointer at `0x3
 ![gameD](/img/gidaD.png)\
 \
 This lines up with documentation, and as such adding `0x1C` to the struct produces our addy for width. I never checked what this data is but I think its a `float`, and all I did was change `48 44` to `48 45` and we get the flag\
+![win](/img/win.png)\
+\
+Note: I might have gone overkill with images on this one. soz
